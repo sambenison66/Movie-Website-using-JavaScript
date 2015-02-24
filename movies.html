@@ -1,0 +1,26 @@
+<!-- Name : Samuel Benison Jeyaraj Victor -->
+<!-- Email ID : sambenison66@gmail.com -->
+<!-- Project Link : http://omega.uta.edu/~xxx1234/project2/movies.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Display Movie Information</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="movies.js"></script>
+  </head>
+  <body onload="initialize();">
+    <form>
+       <label>Movie title: <input type="text" id="form-input"/></label>
+       <input type="button" onclick="MovieApp.sendRequest();" value="Display Info"/>
+    </form>
+    <div id="output">&nbsp;</div>
+    <div id="movielistings"></div>
+    <div id="moviedetail">
+      <h1 id="title"></h1>
+      <ul id="cast"></ul>
+      <img id="poster"/>
+      <p id="overview"></p>
+    </div>
+  </body>
+</html>
